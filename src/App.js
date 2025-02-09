@@ -1,15 +1,14 @@
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
-  const title = 'Bem-vindo ao blog'
-  const views = 50;
-  const site = "https://www.bing.com";
+
   return (
     <div className="App">
+      <Navbar/>
       <div className="content">
-        <h1>{title}</h1>
-        <p>Visto mais de {views} vezes</p>
-        <a href={site}> Bing website</a>
+       <Home/>
       </div>
     </div>
   );
