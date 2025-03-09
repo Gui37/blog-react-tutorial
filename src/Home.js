@@ -1,16 +1,20 @@
 import { useState } from "react";
 const Home = () =>{
-    const [name, setName] = useState('The Name is Dante');
-    const [value, setValue] = useState('and It Has ' + 0 + ' Chance to Defeat Me!');
-    const handleClick = () => {
-        setName('The Name is Vergil');
-        setValue('and It Has ' + Math.random() + ' Chance to Defeat Me!');
-    }
+    const [blogs, setBlogs] = useState([
+        {title:'First One',body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur accusamus minima',author:'Dante',id:1},
+        {title:'Second One',body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur accusamus minima',author:'Sparda',id:2},
+        {title:'Third One',body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur accusamus minima',author:'Nero',id:3},
+        {title:'Last One',body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur accusamus minima',author:'Vergil',id:4}
+    ]);
     return(
         <div className="home">
-            <p>{name} {value}</p>
-            <h1>Página Inicial</h1>
-            <button onClick={handleClick}>Clique aqui!</button>
+            {blogs.map((blog) =>(
+                <div className="blog-preview" key={blog.id}>
+
+                    <h2>{blog.title}</h2>
+                    <p>Escrito por: {blog.author}</p>
+                </div>
+            ))}            
         </div>
     );
 }
