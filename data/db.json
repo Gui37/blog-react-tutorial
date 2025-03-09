@@ -1,0 +1,28 @@
+{
+	"blogs":[
+	{
+		"title": "First One",
+		"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur accusamus minima",
+		"author": "Dante",
+		"id": 1
+	},
+	{
+		"title": "Second One",
+		"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur accusamus minima",
+		"author": "Sparda",
+		"id": 2
+	},
+	{
+		"title": "Third One",
+		"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur accusamus minima",
+		"author": "Dante",
+		"id":3
+	},
+	{
+		"title": "Last One", 
+		"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque consectetur accusamus minima",
+			"author": "Vergil", 
+		"id":4
+	}
+	]
+}
