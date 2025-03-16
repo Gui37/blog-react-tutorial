@@ -6,21 +6,21 @@ import Create from './Create';
 function App() {
 
   return (
-    <div className="App">
-      <Navbar/>
-      <div className="content">
-        <Router>
-          <Switch>
-            <Route exact path= "/">
-              <Home/>
-            </Route>
-            <Route path= "/create">
-              <Create/>
-            </Route>
-          </Switch>
-        </Router>
+    <Router>
+      <div className="App">
+        <Navbar/>
+        <div className="content">
+            <Switch>
+              <Route exact path= "/">
+                <Home/>
+              </Route>
+              <Route path= "/create">
+                <Create/>
+              </Route>
+            </Switch>
+        </div>
       </div>
-    </div>
+  </Router>
   );
 }
 
