@@ -59,7 +59,14 @@
 .blog-details div{
     margin: 20px 0;
 }
-
+.blog-details button{
+  background: #f1356d;
+  color:#ffffff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 .create{
   max-width: 400px;
   margin: 0px auto;
