@@ -1,12 +1,13 @@
 import { useState } from "react";
 import usePost from "./usePost";
+import { useHistory } from "react-router-dom";
 
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('Dante');
     const [isAdding, setIsAdding] = useState(false);
-    
+    const history = useHistory();
     
     const handleSubmit = (e) =>{
         e.preventDefault();
@@ -28,7 +29,7 @@ const Create = () => {
                     }
                 });
     
-        console.log(blog);
+        history.push("/");
     }
     return (
         <div className="create">
