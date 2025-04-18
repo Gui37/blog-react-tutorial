@@ -1,5 +1,4 @@
 import { useState } from "react";
-import usePost from "./usePost";
 import { useHistory } from "react-router-dom";
 
 const Create = () => {

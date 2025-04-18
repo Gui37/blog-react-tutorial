@@ -29,18 +29,6 @@
       "title": "Guy",
       "body": "npx json-server --watch data/db.json --port 8000",
       "author": "Dante"
-    },
-    {
-      "id": "7730",
-      "title": "teste",
-      "body": "testando essa merda",
-      "author": "Lady"
-    },
-    {
-      "id": "563b",
-      "title": "teste",
-      "body": "Testando essa merda",
-      "author": "Lady"
     }
   ]
 }
